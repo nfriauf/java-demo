@@ -1,10 +1,14 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
 //        1.Create a loop that will print numbers from 1 to 10, except number 7
 
-        for (int i = 1; i < 11; i++) {
+       for (int i = 1; i < 11; i++) {
             if  (i == 7) {
                 continue;
             }
@@ -22,10 +26,21 @@ public class Main {
 
         try {
             System.out.println(array[10]);
-        } catch(Exception z) {
-            System.out.println(z);
+        } catch(Exception e) {
+            System.out.println("Outside of bound message.");
         }
 
 
+
+
+
+
+
+
+
+
+
+
     }
+
 }
