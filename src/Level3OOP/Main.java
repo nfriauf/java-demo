@@ -5,13 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Cars Audi = new Cars();
+        Cars audi2 = new Cars();
         Cars bmw = new Cars();
         Cars audi = new Cars();
 
-       Audi.setModel("e-tron");
-       Audi.setCountry("USA");
-       Audi.setMaker("Audi Group");
+       audi2.setModel("e-tron");
+       audi2.setCountry("USA");
+       audi2.setMaker("Audi Group");
 
        bmw.setModel("i8");
        bmw.setCountry("Germany");
@@ -21,9 +21,9 @@ public class Main {
        audi.setCountry("Germany");
        audi.setMaker("Volkswagen Group");
 
-        System.out.println("Model : Audi " + Audi.getModel()
-                + " Country: " + Audi.getCountry()
-                + " Maker: " + Audi.getMaker());
+        System.out.println("Model : Audi " + audi2.getModel()
+                + " Country: " + audi2.getCountry()
+                + " Maker: " + audi2.getMaker());
 
         System.out.println("Model : bmw " + bmw.getModel()
                 + " Country: " + bmw.getCountry()
