@@ -2,9 +2,9 @@ package Level3OOP;
 
 public class Cars {
 
-    String model;
-    String country;
-    String maker;
+    private String model;
+    private String country;
+    private String maker;
 
     public void setModel(String newModel) {
         this.model = newModel;
