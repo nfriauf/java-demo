@@ -10,27 +10,27 @@ public class Collectiond {
 /*Part 1 Maps:
 Write a Java program to test if a map contains a mapping for the specified key.*/
 
-        HashMap<Integer, String> number_map = new HashMap<>();
-        number_map.put(1, "first");
-        number_map.put(2, "second");
-        number_map.put(3, "third");
-        number_map.put(4, "fourth");
-        number_map.put(5, "fifth");
-        if (number_map.containsKey(4)) {
-            System.out.println(number_map.get(4));
+        HashMap<Integer, String> numberMap = new HashMap<>();
+        numberMap.put(1, "first");
+        numberMap.put(2, "second");
+        numberMap.put(3, "third");
+        numberMap.put(4, "fourth");
+        numberMap.put(5, "fifth");
+        if (numberMap.containsKey(4)) {
+            System.out.println(numberMap.get(4));
         }
 
 //Write a Java program to copy all of the mappings from the specified map to another map.
 
-        HashMap<Integer, String> new_map = new HashMap<>();
-        new_map.putAll(number_map);
-        System.out.println(new_map);
+        HashMap<Integer, String> newMap = new HashMap<>();
+        newMap.putAll(numberMap);
+        System.out.println(newMap);
 
 //Remove a value from HashMap based on key
-        if (new_map.containsKey(3)) {
-            new_map.remove(3);
+        if (newMap.containsKey(3)) {
+            newMap.remove(3);
         }
-        System.out.println(new_map);
+        System.out.println(newMap);
 
 /*Part 2 Sets:
 Initiate a Set. Using For loop add integers from 1 to 10*/
@@ -42,13 +42,13 @@ Initiate a Set. Using For loop add integers from 1 to 10*/
         System.out.println(hs);
 
 //Remove all odd numbers from sets.
-        HashSet<Integer> hs_new = new HashSet<>();
+        HashSet<Integer> hsNew = new HashSet<>();
         for (int i : hs) {
             if (i % 2 == 0) {
-                hs_new.add(i);
+                hsNew.add(i);
             }
         }
-        System.out.println(hs_new);
+        System.out.println(hsNew);
 
 //Try to create a set with duplicate values
         hs.add(1);
@@ -67,22 +67,22 @@ Initiate an Arraylist. Using For loop add integers from 1 to 10*/
 
 //Create an ArrayList [1,2,3,6,7,3,2,1]. Remove all 2 from Arraylist
 
-        ArrayList<Integer> new_array = new ArrayList<>();
-        new_array.add(1);
-        new_array.add(2);
-        new_array.add(3);
-        new_array.add(6);
-        new_array.add(7);
-        new_array.add(3);
-        new_array.add(2);
-        new_array.add(1);
-        System.out.println(new_array);
-        for (int i = new_array.size() - 1; i >= 0; i--) {
-            if (new_array.get(i) == 2) {
-                new_array.remove(i);
+        ArrayList<Integer> newArray = new ArrayList<>();
+        newArray.add(1);
+        newArray.add(2);
+        newArray.add(3);
+        newArray.add(6);
+        newArray.add(7);
+        newArray.add(3);
+        newArray.add(2);
+        newArray.add(1);
+        System.out.println(newArray);
+        for (int i = newArray.size() - 1; i >= 0; i--) {
+            if (newArray.get(i) == 2) {
+                newArray.remove(i);
             }
         }
-        System.out.println(new_array);
+        System.out.println(newArray);
 
 //Remove all odd numbers;
 
