@@ -16,20 +16,19 @@ Write a Java program to test if a map contains a mapping for the specified key.*
         numberMap.put(3, "third");
         numberMap.put(4, "fourth");
         numberMap.put(5, "fifth");
-        if (numberMap.containsKey(4)) {
-            System.out.println(numberMap.get(4));
-        }
+
+        boolean keyCheck= numberMap.containsKey(6);
+            System.out.println(keyCheck);
+
 
 //Write a Java program to copy all of the mappings from the specified map to another map.
 
         HashMap<Integer, String> newMap = new HashMap<>();
         newMap.putAll(numberMap);
-        System.out.println(newMap);
+        System.out.println("numberMap: " + numberMap +"\nnewMap: " + newMap);
 
 //Remove a value from HashMap based on key
-        if (newMap.containsKey(3)) {
-            newMap.remove(3);
-        }
+        newMap.remove(3);
         System.out.println(newMap);
 
 /*Part 2 Sets:
