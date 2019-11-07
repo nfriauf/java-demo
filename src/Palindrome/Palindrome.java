@@ -9,7 +9,7 @@ public class Palindrome {
         String original;
         String reverse = new String();
         original = inputScanner.nextLine();
-        original = original.replaceAll("[^a-zA-Z]+", "").toLowerCase();
+        original = original.replaceAll("[^a-zA-Z1-9]+", "").toLowerCase();
         for (int i = original.length() - 1; i >= 0; i--) {
             reverse += original.charAt(i);
         }
